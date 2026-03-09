@@ -121,3 +121,10 @@ Ou usando PHPUnit diretamente:
 ```
 
 ---
+
+# Documentação
+
+A rota de Documentação da API
+```
+http://localhost/docs/api#/
+```
