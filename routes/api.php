@@ -15,7 +15,7 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('logout', [AuthController::class, 'logout']);
     });
 
-    Route::apiResource('orders', OrderController::class);
+    Route::apiResource('orders', OrderController::class)->except(['destroy', 'create', 'edit']);
     Route::patch('orders/{order}/status', [OrderController::class, 'changeStatus'])
         ->name('orders.changeStatus');
 });
