@@ -4,14 +4,6 @@
 
 API desenvolvida com **Laravel** para gerenciamento de pedidos.
 
-O projeto foi estruturado com foco em simplicidade e separação de responsabilidades:
-
-* **Controllers** lidam apenas com entrada HTTP.
-* **Services / Strategies** encapsulam regras de negócio.
-* **Events + Listeners** desacoplam ações secundárias (notificações).
-* **Notifications** são usadas para comunicação com usuários (Por email e database).
-* **Testes automatizados** garantem o funcionamento das regras principais.
-
 ### Decisões técnicas
 
 * Uso de **Events e Listeners** para evitar lógica acoplada em controllers.
